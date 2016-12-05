@@ -18,7 +18,7 @@ add_action ('init', function () {
       'add_new'            => __( 'Add Announcement', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
       'add_new_item'       => __( 'Add New Announcement', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
       'edit_item'          => __( 'Edit Announcement', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
-      'new_item'           => __( 'New Announcement', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
+      'new_item'           => __( 'New Announcement', KUNTA_API_ANNOUNEMENTS_I18N_DOMAIN ),
       'view_item'          => __( 'View Announcement', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
       'search_items'       => __( 'Search Announcements', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
       'not_found'          => __( 'No Announcements found', KUNTA_API_ANNOUNCEMENTS_I18N_DOMAIN ),
@@ -31,8 +31,7 @@ add_action ('init', function () {
     'show_in_rest' => true,
     'supports' => array (
       'title',
-      'editor',
-      'thumbnail'
+      'editor'
      )
    ));
 });
